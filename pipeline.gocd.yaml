@@ -1,5 +1,5 @@
 pipelines:
-  Build:
+  Build_ffmpeg:
     group: ffmpeg
     label_template: "${repository[:8]}"
     materials:
