@@ -4,7 +4,7 @@ pipelines:
     label_template: "${repository[:8]}"
     materials:
       repository:
-        git: git@github.com:sebastianhutter/docker-git.git
+        git: git@github.com:sebastianhutter/docker-ffmpeg.git
     stages:
       - Build:
           jobs:
