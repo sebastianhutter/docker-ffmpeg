@@ -12,6 +12,9 @@ pipelines:
       - Build:
           jobs:
             build:
+              artifacts:
+               - build:
+                   source: image_version
               tasks:
                - exec:
                    command: make
