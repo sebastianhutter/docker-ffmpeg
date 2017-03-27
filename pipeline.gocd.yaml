@@ -5,6 +5,9 @@ pipelines:
     materials:
       repository:
         git: git@github.com:sebastianhutter/docker-ffmpeg.git
+    timer:
+      spec: "0 0 1 1/7 * ?"
+      only_on_changes: no
     stages:
       - Build:
           jobs:
